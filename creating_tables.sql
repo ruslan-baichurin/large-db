@@ -66,3 +66,6 @@ create table photo_tags(
 	foreign key(tag_id) references tags(id),
 	primary key(photo_id, tag_id)
 );
+
+-- Populating the database with sample data from a file
+source sample_data.sql;
